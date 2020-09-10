@@ -9,4 +9,5 @@ $(function () {
     $(".reg-box").hide();
     $(".login-box").show();
   });
+  
 });
