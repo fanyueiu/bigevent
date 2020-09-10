@@ -11,6 +11,7 @@ $(function () {
   });
   // 设置自定义
   var form = layui.form;
+  var layer = layui.layer;
   form.verify({
     pwd: [/^[\S]{6,12}$/, "密码必须6到12位，且不能出现空格"],
     // 设置再次确认密码必须两次一致
@@ -37,6 +38,11 @@ $(function () {
       $(".gologin").click();
     });
   });
+  $('#register [name="username"]').on("change", function () {
+    $('#register [name="password"]').val("");
+    $('#register [name="repassword"]').val("");
+  });
+
   // 监听登录表单提交事件
   $("#form_login").on("submit", function (e) {
     // 阻止默认提交行为

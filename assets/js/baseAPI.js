@@ -3,3 +3,4 @@ $.ajaxPrefilter(function (options) {
   // 在发起ajax之前，统一进行拼接
   options.url = "http://ajax.frontend.itheima.net" + options.url;
 });
+
