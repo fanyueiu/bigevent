@@ -20,7 +20,7 @@
       <div class="login-box">
         <!-- 登录表单 -->
         <!-- 用户名 -->
-        <form class="layui-form" action="">
+        <form class="layui-form">
           <div class="layui-form-item">
             <i class="layui-icon layui-icon-username"></i>
             <input
@@ -40,7 +40,7 @@
               type="password"
               name="password"
               required
-              lay-verify="required"
+              lay-verify="required|pwd"
               placeholder="请输入密码"
               autocomplete="off"
               class="layui-input"
@@ -64,7 +64,7 @@
       <!-- 注册表单 -->
       <div class="reg-box">
         <!-- 用户名 -->
-        <form class="layui-form" action="">
+        <form class="layui-form">
           <div class="layui-form-item">
             <i class="layui-icon layui-icon-username"></i>
             <input
@@ -84,7 +84,7 @@
               type="password"
               name="password"
               required
-              lay-verify="required"
+              lay-verify="required|pwd"
               placeholder="请输入密码"
               autocomplete="off"
               class="layui-input"
@@ -97,8 +97,8 @@
               type="password"
               name="repassword"
               required
-              lay-verify="required"
-              placeholder="请输入密码"
+              lay-verify="required|pwd|repwd"
+              placeholder="请再次输入密码"
               autocomplete="off"
               class="layui-input"
             />
